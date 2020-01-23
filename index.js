@@ -34,7 +34,7 @@ function mapToSquare(def) {
 function reduceToTotal(def, startPoint=0) {
   let tot = startPoint
   for (let i = 0; i < def.length; i++ ) {
-    tot = total + def[i]
+    tot = tot + def[i]
   }
   return tot
 }
