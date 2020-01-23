@@ -32,11 +32,11 @@ function mapToSquare(def) {
 }
 
 function reduceToTotal(def, startPoint=0) {
-  let total = startPoint
-  for (let i = 0; i < src.length; i++ ) {
-    total = total + src[i]
+  let tot = startPoint
+  for (let i = 0; i < def.length; i++ ) {
+    tot = total + def[i]
   }
-  return total
+  return tot
 }
 
 function reduceToAllTrue(src) {
