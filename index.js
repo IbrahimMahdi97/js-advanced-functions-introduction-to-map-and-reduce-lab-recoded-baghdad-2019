@@ -39,9 +39,9 @@ function reduceToTotal(def, startPoint=0) {
   return tot
 }
 
-function reduceToAllTrue(src) {
-  for (let i = 0; i < src.length; i++ ) {
-    if (!src[i]) return false
+function reduceToAllTrue(def) {
+  for (let i = 0; i < def.length; i++ ) {
+    if (!def[i]) return false
   }
   return true
 }
