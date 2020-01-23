@@ -1,37 +1,37 @@
 // Your code here
-function mapToNegativize(src) {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(-1 * src[i])
+function mapToNegativize(def) {
+  let v = []
+  for (let i = 0; i < def.length; i++ ) {
+    v.push(-1 * def[i])
   }
-  return r
+  return v
 }
 
-function mapToNoChange(src) {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(src[i])
+function mapToNoChange(def) {
+  let v = []
+  for (let i = 0; i < def.length; i++ ) {
+    v.push(def[i])
   }
-  return r
+  return v
 }
 
-function mapToDouble(src) {
-  let r = []
+function mapToDouble(def) {
+  let v = []
   for (let i = 0; i < src.length; i++ ) {
-    r.push(2 * src[i])
+    v.push(2 * def[i])
   }
-  return r
+  return v
 }
 
-function mapToSquare(src) {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(src[i] * src[i])
+function mapToSquare(def) {
+  let v = []
+  for (let i = 0; i < def.length; i++ ) {
+    v.push(def[i] * src[i])
   }
-  return r
+  return v
 }
 
-function reduceToTotal(src, startingPoint=0) {
+function reduceToTotal(def, startPoint=0) {
   let total = startingPoint
   for (let i = 0; i < src.length; i++ ) {
     total = total + src[i]
