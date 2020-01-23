@@ -17,7 +17,7 @@ function mapToNoChange(def) {
 
 function mapToDouble(def) {
   let v = []
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < def.length; i++ ) {
     v.push(2 * def[i])
   }
   return v
